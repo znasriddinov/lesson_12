@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+}
+
+@media screen and (max-width: 769px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+.carousel-status {
+    display: none;
+}
+
+.carousel.carousel-slider .control-arrow {
+    background-color: #000;
+}
+
+textarea {
+    resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
